@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">TugasSantriIDN</string>
+    <string name="app_name">Tugas Santri IDN</string>
+
+    <string name="txt_home">Home</string>
+    <string name="txt_history">Riwayat</string>
+    <string name="masukkan_nnama_dan_kelas_antum">Masukkan\nnama dan kelas antum</string>
+    <string name="nama">Nama</string>
+    <string name="kelas">Kelas</string>
+    <string name="terapkan">Terapkan</string>
+    <string name="pilih_kelas">Pilih kelas</string>
 </resources>

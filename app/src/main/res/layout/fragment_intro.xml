@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_intro"
+    android:orientation="vertical"
+    android:paddingHorizontal="24dp"
+    android:paddingTop="50dp"
+    tools:context=".main.intro.IntroFragment">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_bold"
+        android:text="@string/masukkan_nnama_dan_kelas_antum"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/nama"
+        android:textColor="@color/colorWhite" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etNama"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/custom_edittext"
+        android:fontFamily="@font/montserrat_medium"
+        android:lines="1"
+        android:maxLines="1"
+        android:paddingStart="8dp"
+        android:singleLine="true" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/kelas"
+        android:textColor="@color/colorWhite" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etKelas"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="6dp"
+        android:background="@drawable/custom_edittext"
+        android:drawableEnd="@drawable/ic_arrow_down"
+        android:editable="false"
+        android:fontFamily="@font/montserrat_medium"
+        android:paddingStart="8dp"
+        android:paddingEnd="16dp" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/btnLanjutkan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:drawableEnd="@drawable/ic_arrow_circle_right"
+        android:drawablePadding="8dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:gravity="center_vertical"
+        android:text="Lanjutkan"
+        android:textColor="@color/colorAccent" />
+
+</LinearLayout>
