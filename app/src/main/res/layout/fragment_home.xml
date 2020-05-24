@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:toggle="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewmodel"
+            type="com.haidev.tugassantriidn.main.submain.home.viewmodels.HomeViewModel" />
+    </data>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_submain"
+        tools:context=".main.submain.home.views.HomeFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="24dp"
+            android:paddingTop="50dp">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/montserrat_bold"
+                android:maxLines="1"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp"
+                tools:text="Assalamualaikum" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTanggal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/montserrat_medium"
+                android:maxLines="1"
+                android:textColor="@color/colorWhite"
+                android:textSize="13sp"
+                tools:text="Ini jadwal" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/custom_card"
+                android:padding="16dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@id/btnToggleSholat"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:maxLines="1"
+                    android:text="@string/sholat_5_waktu"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp" />
+
+                <com.zcw.togglebutton.ToggleButton
+                    android:id="@+id/btnToggleSholat"
+                    android:layout_width="54dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:elevation="2dp"
+                    app:tbAsDefaultOn="false"
+                    toggle:tbOffBorderColor="@color/colorOffToggle"
+                    toggle:tbOffColor="@color/colorOffToggle"
+                    toggle:tbOnColor="@color/colorOnToggle"
+                    toggle:tbSpotColor="@color/colorWhite" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/custom_card"
+                android:padding="16dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@id/btnToggleQuran"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:maxLines="1"
+                    android:text="@string/membaca_al_quran"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp" />
+
+                <com.zcw.togglebutton.ToggleButton
+                    android:id="@+id/btnToggleQuran"
+                    android:layout_width="54dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:elevation="2dp"
+                    app:tbAsDefaultOn="false"
+                    toggle:tbOffBorderColor="@color/colorOffToggle"
+                    toggle:tbOffColor="@color/colorOffToggle"
+                    toggle:tbOnColor="@color/colorOnToggle"
+                    toggle:tbSpotColor="@color/colorWhite" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/custom_card"
+                android:padding="16dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@id/btnToggleDhuha"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:maxLines="1"
+                    android:text="@string/sholat_dhuha"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp" />
+
+                <com.zcw.togglebutton.ToggleButton
+                    android:id="@+id/btnToggleDhuha"
+                    android:layout_width="54dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:elevation="2dp"
+                    app:tbAsDefaultOn="false"
+                    toggle:tbOffBorderColor="@color/colorOffToggle"
+                    toggle:tbOffColor="@color/colorOffToggle"
+                    toggle:tbOnColor="@color/colorOnToggle"
+                    toggle:tbSpotColor="@color/colorWhite" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/custom_card"
+                android:padding="16dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@id/btnToggleTahajjud"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:maxLines="1"
+                    android:text="@string/sholat_tarawih"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp" />
+
+                <com.zcw.togglebutton.ToggleButton
+                    android:id="@+id/btnToggleTahajjud"
+                    android:layout_width="54dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:elevation="2dp"
+                    app:tbAsDefaultOn="false"
+                    toggle:tbOffBorderColor="@color/colorOffToggle"
+                    toggle:tbOffColor="@color/colorOffToggle"
+                    toggle:tbOnColor="@color/colorOnToggle"
+                    toggle:tbSpotColor="@color/colorWhite" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/custom_card"
+                android:padding="16dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@id/btnToggleOrangTua"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/montserrat_bold"
+                    android:maxLines="1"
+                    android:text="@string/membantu_orang_tua"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp" />
+
+                <com.zcw.togglebutton.ToggleButton
+                    android:id="@+id/btnToggleOrangTua"
+                    android:layout_width="54dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentEnd="true"
+                    android:elevation="2dp"
+                    app:tbAsDefaultOn="false"
+                    toggle:tbOffBorderColor="@color/colorOffToggle"
+                    toggle:tbOffColor="@color/colorOffToggle"
+                    toggle:tbOnColor="@color/colorOnToggle"
+                    toggle:tbSpotColor="@color/colorWhite" />
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnLaporkan"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="44dp"
+                android:background="@drawable/custom_button"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/kirim_laporan"
+                android:textAllCaps="false"
+                android:textColor="@color/colorText" />
+        </LinearLayout>
+    </ScrollView>
+</layout>

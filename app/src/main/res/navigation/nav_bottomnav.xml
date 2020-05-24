@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_submain"
+    app:startDestination="@id/navigationHome">
+
+    <fragment
+        android:id="@+id/navigationHome"
+        android:name="com.haidev.tugassantriidn.main.submain.home.views.HomeFragment"
+        android:label="HomeFragment" />
+    <fragment
+        android:id="@+id/navigationHistory"
+        android:name="com.haidev.tugassantriidn.main.submain.history.views.HistoryFragment"
+        android:label="HistoryFragment" />
+</navigation>

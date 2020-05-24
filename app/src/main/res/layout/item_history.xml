@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewmodel"
+            type="com.haidev.tugassantriidn.main.submain.history.viewmodels.ItemHistoryViewModel" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/custom_card"
+        android:orientation="vertical"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_medium"
+            android:maxLength="10"
+            android:text="@{viewmodel.tanggal}"
+            android:textAlignment="textEnd"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp"
+            tools:text="14 April 2020" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSholat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:drawableStart="@drawable/ic_check_circle"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:gravity="center_vertical"
+            android:text="@string/sholat_5_waktu"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvQuran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawableStart="@drawable/ic_check_circle"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:gravity="center_vertical"
+            android:text="@string/membaca_al_quran"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDhuha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawableStart="@drawable/ic_check_circle"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:gravity="center_vertical"
+            android:text="@string/sholat_dhuha"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTarawih"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawableStart="@drawable/ic_check_circle"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:gravity="center_vertical"
+            android:text="@string/sholat_tarawih"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvOrtu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:drawableStart="@drawable/ic_check_circle"
+            android:drawablePadding="8dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:gravity="center_vertical"
+            android:text="@string/membantu_orang_tua"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp" />
+    </LinearLayout>
+</layout>

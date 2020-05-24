@@ -35,6 +35,8 @@
         android:lines="1"
         android:maxLines="1"
         android:paddingStart="8dp"
+        android:textColor="@color/colorText"
+        android:textSize="16sp"
         android:singleLine="true" />
 
     <androidx.appcompat.widget.AppCompatTextView
@@ -45,17 +47,20 @@
         android:text="@string/kelas"
         android:textColor="@color/colorWhite" />
 
-    <androidx.appcompat.widget.AppCompatEditText
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/etKelas"
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:layout_marginTop="6dp"
         android:background="@drawable/custom_edittext"
         android:drawableEnd="@drawable/ic_arrow_down"
-        android:editable="false"
         android:fontFamily="@font/montserrat_medium"
+        android:gravity="center_vertical"
+        android:paddingEnd="16dp"
         android:paddingStart="8dp"
-        android:paddingEnd="16dp" />
+        android:singleLine="true"
+        android:textColor="@color/colorText"
+        android:textSize="16sp" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/btnLanjutkan"

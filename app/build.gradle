@@ -5,24 +5,24 @@ apply plugin: 'kotlin-kapt'
 
 android {
     compileSdkVersion 29
-    buildToolsVersion "29.0.2"
+    buildToolsVersion "29.0.3"
 
     defaultConfig {
         applicationId "com.haidev.tugassantriidn"
         minSdkVersion 22
         targetSdkVersion 29
-        versionCode 1
-        versionName "1.0"
+        versionCode 3
+        versionName "3.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     flavorDimensions "default"
     productFlavors {
         development {
-            buildConfigField "String", "BASE_URL", "\"https://script.google.com/macros/s/AKfycbwmKSwjAeojRD32XPszmI-U2OFTk8z6sTzcs_aduIQK_L8WFg/exec\""
+            buildConfigField "String", "BASE_URL", "\"https://script.google.com/macros/s/AKfycbwmKSwjAeojRD32XPszmI-U2OFTk8z6sTzcs_aduIQK_L8WFg/\""
         }
         production {
-            buildConfigField "String", "BASE_URL", "\"https://script.google.com/macros/s/AKfycbwmKSwjAeojRD32XPszmI-U2OFTk8z6sTzcs_aduIQK_L8WFg/exec\""
+            buildConfigField "String", "BASE_URL", "\"https://script.google.com/macros/s/AKfycbwmKSwjAeojRD32XPszmI-U2OFTk8z6sTzcs_aduIQK_L8WFg/\""
         }
     }
     androidExtensions {

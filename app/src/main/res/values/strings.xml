@@ -8,4 +8,14 @@
     <string name="kelas">Kelas</string>
     <string name="terapkan">Terapkan</string>
     <string name="pilih_kelas">Pilih kelas</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="riwayat_tugas_antum_nselama_ramadhan">Riwayat tugas antum\nselama ramadhan</string>
+    <string name="sholat_5_waktu">Sholat Fardhu Berjamaah</string>
+    <string name="membaca_al_quran">Tilawah Quran 1 juz</string>
+    <string name="sholat_dhuha">Sholat Dhuha</string>
+    <string name="sholat_tarawih">Tarawih Berjamaah</string>
+    <string name="membantu_orang_tua">Membantu Orang Tua</string>
+    <string name="kirim_laporan">Kirim Laporan</string>
+    <string name="no_data_history">No Data History\n\nBelum pernah kirim laporan</string>
 </resources>

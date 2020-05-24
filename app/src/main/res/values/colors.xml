@@ -5,5 +5,7 @@
     <color name="colorAccent">#FEC474</color>
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorText">#394A6D</color>
+    <color name="colorOnToggle">#2ECC71</color>
+    <color name="colorOffToggle">#E74C3C</color>
 
 </resources>
